@@ -1,4 +1,5 @@
-add_executable(ai-rng rng.cpp)
+add_executable(ai-rng rng.cpp
+        CounterBasedRNG.cpp)
 
 file(GLOB TEST_INPUT_FILES ${CMAKE_CURRENT_SOURCE_DIR}/tests/*.in)
 file(GLOB TEST_OUTPUT_FILES ${CMAKE_CURRENT_SOURCE_DIR}/tests/*.out)
