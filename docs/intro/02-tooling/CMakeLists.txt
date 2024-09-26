@@ -1,5 +1,6 @@
 add_executable(02-hello hello.cpp)
-add_executable(02-extremelyBasic extremelyBasic.cpp)
+add_executable(02-extremelyBasic extremelyBasic.cpp
+        ../../artificialintelligence/assignments/rng/WallsExample.cpp)
 
 if(WIN32)
   add_custom_target(

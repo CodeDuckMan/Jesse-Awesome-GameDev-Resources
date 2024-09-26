@@ -38,15 +38,10 @@ int main() {
   }
 }
 
-unsigned int counterBasedRandomNumberGeneration(int64_t x,int64_t w,int64_t s)
+inline static int32_t counterBasedRandomNumberGeneration(int64_t x = 0,int64_t w =0,int64_t s)
 {
 
- inline static int32_t msws32() {
 x *= x; x += (w += s);
 
 return x = (x>>32) | (x<<32);
-}
-
-  
-  return 0;
 }
